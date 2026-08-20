@@ -1,0 +1,19 @@
+machine: PULSE-M1
+version: 1.0.0
+
+temporal_horizons:
+  - 3
+  - 7
+  - 23
+
+primary_metric:
+  name: brier_score
+  comparison: pulse_vs_raw_evaluation
+
+clinical_boundary:
+  evaluates_ai_system_not_patient: true
+  autonomous_diagnosis: false
+  autonomous_treatment: false
+
+freeze:
+  hash: sha256

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "PULSE: Predictive Uncertainty and Longitudinal Safety Evaluation"
+message: "If you use PULSE in research, please cite this repository."
+type: software
+authors:
+  - family-names: Wright
+    given-names: Matthew C.
+date-released: 2026-08-20
+version: 1.0.0
+license: MIT

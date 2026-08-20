@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PULSE Medical-AI Safety Evaluation Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "evaluation_id",
+    "risk_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "evaluation_id": {
+      "type": "string"
+    },
+    "risk_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "uncertainty_state": {
+      "type": "number"
+    },
+    "reviewer_instability": {
+      "type": "number"
+    },
+    "safety_pressure": {
+      "type": "number"
+    },
+    "distribution_pressure": {
+      "type": "number"
+    },
+    "clinical_decision_use": {
+      "const": false
+    }
+  }
+}
